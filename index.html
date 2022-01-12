@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css" class="rel">
+  <title>Tip calculator</title>
+</head>
+<body>
+  <div class="header">
+  </div>
+
+  <div class="mainContainer">
+    <div class="topSection">
+      <div class="label">
+        <label for="input">Bill</label>
+      </div>
+      <div class="inputContainer">
+        <input type="number" placeholder="0.0" id="input">
+      </div>
+
+        <div class="label">
+          <label for="customTip">Select Tip %</label>
+        </div>
+        <div class="btnContainer">
+          <button class="btn">5%</button>
+          <button class="btn">10%</button>
+          <button class="btn active">15%</button>
+          <button class="btn">25%</button>
+          <button class="btn">50%</button>
+          <input type="number" placeholder="Custom" id="customTip" />
+        </div>
+        <div class="label">
+          <label for="people">Number of People</label>
+          <p id="error"></p>
+        </div>
+        <div class="peopleWrapper">
+          <input type="number" placeholder="1" id="people">
+        </div>
+      </div>
+
+        <div class="bottomSection">
+          <div class="Amount">
+            <div class="desc">
+              <p>Tip Amount <br/> <span>/ person</span></p>
+              <div class="tipValue">$ 5</div>
+            </div>
+            <div class="desc">
+              <p>Total <br/> <span>/ person</span></p>
+              <div class="tipValue">$ 200</div>
+            </div>
+          </div>
+          <button class="reset">RESET</button>
+      </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
